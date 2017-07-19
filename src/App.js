@@ -27,6 +27,7 @@ class App extends Component {
     this.addTodo = this.addTodo.bind(this)
   }
   addTodo (newTodo){
+    console.log(newTodo)
     this.state.todos.push(newTodo)
     this.setState({todos: this.state.todos})
   }

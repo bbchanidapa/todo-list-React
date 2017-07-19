@@ -15,13 +15,14 @@ class TodoInput extends Component {
 
 	addClicked(){
 		let {onAddTodo} = this.props
-		onAddTodo(this.state.description)
+		
 		this.setState ({
 			id: "",
 			date: "",
 			title: "",
 			description: ""
 		})
+		onAddTodo(this.state)
 	}
 
 	render(){
